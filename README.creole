@@ -1,3 +1,35 @@
 == Geting Started with Closure and Sinatra
 
+This is a sample application to be used in conjunction with
+[[http://blazingcloud.net/blog/|the tutorial]].
 
+All the application does is instantiate a Javascript object
+that writes messages to the user by appending content to
+the document body.
+
+=== Setup the repository and start the server
+# {{{git clone git@github.com:blazingcloud/closure_sinatra_example.git godzilla}}}
+# {{{cd godzilla}}}
+# {{{gem install bundler}}}
+# {{{bundle install}}}
+# {{{ruby server.rb}}}
+
+Now that your server is started, you can navigate to:
+[[http://localhost:4567/test.html]]
+
+=== Using the Uncompiled Code
+
+Perform these steps if you want to play around with the code and not have to
+recompile every time you make a change.
+
+==== Get the Closure Library
+# {{{cd godzilla}}}
+# {{{svn checkout http://closure-library.googlecode.com/svn/trunk/ closure-library}}}
+# {{{cp -R closure-library/closure/* public/}}}
+
+==== Change test.html to point to uncompiled Javascripts
+# comment out:
+{{{<script type="text/javascript" src="/javascripts/test.compiled.js"></script>}}}
+# and uncomment:
+{{{<!--<script type="text/javascript" src="/goog/base.js"></script>-->}}}
+{{{<!--<script type="text/javascript" src="/javascripts/test.js"></script>-->}}}
