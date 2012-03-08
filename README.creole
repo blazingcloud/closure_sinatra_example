@@ -1,7 +1,7 @@
 == Geting Started with Closure and Sinatra
 
 This is a sample application to be used in conjunction with
-[[http://blazingcloud.net/blog/|the tutorial]].
+[[http://blazingcloud.net/2012/03/08/getting-started-with-google-closure-in-sinatra/|the tutorial]].
 
 All the application does is instantiate a Javascript object
 that writes messages to the user by appending content to
