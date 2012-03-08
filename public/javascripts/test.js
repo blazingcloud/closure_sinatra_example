@@ -3,6 +3,7 @@
 // This information is used by the compiler to
 // optimize your code.
 goog.provide("godzilla.test");
+goog.provide("godzilla.test.MessageWriter");
 
 // We want to use some functionality defined in this module.
 goog.require("goog.dom");
